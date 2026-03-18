@@ -1,0 +1,27 @@
+﻿@using SmartStore.Models.DTOs
+@model List<ProductDto>
+<h1>
+    strona startowa
+</h1>
+
+    to lista produktów:
+    
+        @if(Model != null)
+        {
+        <ul>
+            @foreach (var product in Model)
+            {
+                <li>
+                    @product.Id | @product.Title | @product.Price | @product.Tumbnail | @product.Category
+                </li>
+
+            }
+            </ul>
+        }
+        else
+        {
+           <p>brak produktów </p> 
+        }
+
+    
+    
