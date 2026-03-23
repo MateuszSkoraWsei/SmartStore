@@ -6,9 +6,11 @@ using SmartStore.Services;
 
 namespace SmartStore.Controllers
 {
-    public class HomeController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class HomeController : ControllerBase
     {
-        private readonly IProductService  _productService;
+        private readonly IProductService _productService;
         public HomeController(IProductService productService)
         {
             _productService = productService;
@@ -18,18 +20,56 @@ namespace SmartStore.Controllers
         public async Task<IActionResult> Index()
         {
             var products = await _productService.GetAllProductsAsync();
-            return View(products);
+            return Ok(new {
+                succes = true,
+                data = products,
+                total = products.Count
+            }
+
+            );
         }
 
-        [Route("Home/Error/{statusCode}")]
-        public IActionResult Error(int? statusCode)
+        [HttpGet]
+        [Route("/api/{category}")]
+        public async Task<IActionResult> Categories(string category)
         {
-            if(statusCode == 404)
+            var products = await _productService.GetProductsByCategory(category);
+            return Ok(new
             {
-                return View("Error/NotFound");
+                status = true,
+                data = products,
+                total = products.Count
+            });
 
-            }
-            return View(new ErrorViewModel{ RequestID = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        [HttpGet("{id}")]
+        
+        public async Task<IActionResult> GetProductById(int id)
+        {
+            var product = await _productService.GetProductByID(id);
+
+            return Ok(
+                new
+                {
+                    status = true,
+                    data = product
+                });
+        }
+        [HttpGet]
+        [Route("/api/getCategories")]
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _productService.GetAllCategories();
+            return Ok(
+                new
+                {
+                    status = true,
+                    data = categories,
+                    total = categories.Count
+                });
+
         }
     }
 }
+
+        

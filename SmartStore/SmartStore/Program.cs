@@ -1,5 +1,12 @@
 using Microsoft.AspNetCore.Components;
 using SmartStore.Services;
+using SmartStore.Models;
+using Microsoft.AspNetCore.Identity;
+using SmartStore.Context;
+using SmartStore.Context;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace SmartStore
 {
@@ -9,44 +16,97 @@ namespace SmartStore
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            
+
 
             builder.Services.AddHttpClient("DummyJson", client =>
             {
-                client.BaseAddress = new Uri("https://dummyjson.com/"); 
+                client.BaseAddress = new Uri("https://dummyjson.com/");
                 client.DefaultRequestHeaders.Add("Accept", "application/json");
             });
 
             builder.Services.AddScoped<IProductService, ProductService>();
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+                    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+                });
+
+
+
             builder.Services.AddRazorPages();
 
-            var app = builder.Build();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
-            if (!app.Environment.IsDevelopment())
+            builder.Services.AddCors(options =>
             {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
-            else
+                options.AddPolicy("ReactAppPolicy", policy =>
+                {
+                    policy.WithOrigins("https://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+
+                });
+            });
+
+            builder.Services.AddDbContext<AppDBContext>(options =>
+                options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"])
+
+            );
+
+            builder.Services.AddIdentityCore<ApplicationUser>(options =>
             {
-                app.UseDeveloperExceptionPage();
-            }
-                app.UseStatusCodePagesWithReExecute("/Home/Error/{0}");
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 6;
+            })
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<AppDBContext>()
+                .AddDefaultTokenProviders();
 
-            app.UseStaticFiles();
-            app.UseRouting();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-            app.MapRazorPages();
+            builder.Services.AddIdentityCore<ApplicationUser>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 6;
+            })
+                .AddRoles<IdentityRole>();
+
             
+                
+
+                var app = builder.Build();
+
+                if (!app.Environment.IsDevelopment())
+                {
+                    app.UseExceptionHandler("/Home/Error");
+                    app.UseHsts();
+                    
+                
+                }
+                else
+                {
+                    app.UseDeveloperExceptionPage();
+                    app.UseSwagger();
+                    app.UseSwaggerUI();
+                    
+            }
+            app.UseStatusCodePagesWithReExecute("/Error/{0}");
+
+                app.UseStaticFiles();
+                app.UseRouting();
+
+                app.UseCors("ReactAppPolicy");
+
+
+                app.MapControllers();
 
 
 
-            app.Run();
+
+                app.Run();
+            
         }
     }
 }

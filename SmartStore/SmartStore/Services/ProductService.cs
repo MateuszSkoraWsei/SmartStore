@@ -5,10 +5,20 @@ namespace SmartStore.Services
     public class ProductService : IProductService
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        
 
         public ProductService(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
+        }
+
+        public async Task<List<String>> GetAllCategories()
+        {
+            var client = _httpClientFactory.CreateClient("DummyJson");
+            var response = await client.GetFromJsonAsync<List<string>>("products/category-list");
+
+            return response ?? new List<string>();
+
         }
 
         public async Task<List<ProductDto>> GetAllProductsAsync()
@@ -21,6 +31,33 @@ namespace SmartStore.Services
                 var data = await response.Content.ReadFromJsonAsync<ProductsResponse>();
                 return data?.Products ?? new List<ProductDto>();
 
+            }
+            return new List<ProductDto>();
+        }
+
+        public async Task<ProductDto> GetProductByID(int id)
+        {
+            var client = _httpClientFactory.CreateClient("DummyJson");
+            var response = await client.GetAsync($"products/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadFromJsonAsync<ProductDto>();
+                return data ?? new ProductDto(); 
+            }
+            return new ProductDto();
+        }
+
+        public async Task<List<ProductDto>> GetProductsByCategory(string category)
+        {
+            var client = _httpClientFactory.CreateClient("DummyJson");
+            var response = await client.GetAsync($"products/category/{category}");
+
+
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadFromJsonAsync<ProductsResponse>();
+                return data!.Products ?? new List<ProductDto>();
             }
             return new List<ProductDto>();
         }
