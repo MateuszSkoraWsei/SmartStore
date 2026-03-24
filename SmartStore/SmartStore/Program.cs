@@ -25,6 +25,7 @@ namespace SmartStore
             });
 
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>

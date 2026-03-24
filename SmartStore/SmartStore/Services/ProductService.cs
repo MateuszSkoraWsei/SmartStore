@@ -12,14 +12,7 @@ namespace SmartStore.Services
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<List<String>> GetAllCategories()
-        {
-            var client = _httpClientFactory.CreateClient("DummyJson");
-            var response = await client.GetFromJsonAsync<List<string>>("products/category-list");
-
-            return response ?? new List<string>();
-
-        }
+       
 
         public async Task<List<ProductDto>> GetAllProductsAsync()
         {

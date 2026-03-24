@@ -6,11 +6,11 @@ using SmartStore.Models.DTOs;
 namespace SmartStore.Controllers
 {
     [ApiController]
-    [Route("/api/Error/{error_code}")]
+    [Route("/api/Error")]
     public class ErrorController : ControllerBase
     {
         [HttpGet]
-        [Route("/Error/{statusCode}")]
+        [Route("{statusCode}")]
         public IActionResult Error(int? statusCode)
         {
             if (statusCode == 404)

@@ -29,46 +29,7 @@ namespace SmartStore.Controllers
             );
         }
 
-        [HttpGet]
-        [Route("/api/{category}")]
-        public async Task<IActionResult> Categories(string category)
-        {
-            var products = await _productService.GetProductsByCategory(category);
-            return Ok(new
-            {
-                status = true,
-                data = products,
-                total = products.Count
-            });
-
-        }
-        [HttpGet("{id}")]
         
-        public async Task<IActionResult> GetProductById(int id)
-        {
-            var product = await _productService.GetProductByID(id);
-
-            return Ok(
-                new
-                {
-                    status = true,
-                    data = product
-                });
-        }
-        [HttpGet]
-        [Route("/api/getCategories")]
-        public async Task<IActionResult> GetCategories()
-        {
-            var categories = await _productService.GetAllCategories();
-            return Ok(
-                new
-                {
-                    status = true,
-                    data = categories,
-                    total = categories.Count
-                });
-
-        }
     }
 }
 
