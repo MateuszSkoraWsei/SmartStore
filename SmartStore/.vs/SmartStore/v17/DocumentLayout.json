@@ -3,59 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\models\\dtos\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\models\\dtos\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mateusz\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\smartstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\smartstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\models\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\models\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|c:\\users\\mateusz\\documents\\github\\smartstore\\smartstore\\smartstore\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3512135-2A83-4540-A136-990429235C6B}|SmartStore\\SmartStore.csproj|solutionrelative:smartstore\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,49 +49,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 8,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "SmartStore\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\CategoryService.cs",
-              "RelativeToolTip": "SmartStore\\Services\\CategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABuAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "SmartStore\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\AuthService.cs",
+              "RelativeToolTip": "SmartStore\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T08:35:19.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Models\\DTOs\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "SmartStore\\Models\\DTOs\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Models\\DTOs\\ErrorViewModel.cs",
-              "RelativeToolTip": "SmartStore\\Models\\DTOs\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T21:25:31.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SmartStore\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SmartStore\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T21:16:29.718Z",
+              "WhenOpened": "2026-03-24T21:30:32.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Mateusz\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
+              "ToolTip": "C:\\Users\\Mateusz\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-23T19:03:35.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ErrorController.cs",
               "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\ErrorController.cs",
               "RelativeDocumentMoniker": "SmartStore\\Controllers\\ErrorController.cs",
@@ -120,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "SmartStore\\Controllers\\CategoriesController.cs",
@@ -133,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\ICategoryService.cs",
               "RelativeDocumentMoniker": "SmartStore\\Services\\ICategoryService.cs",
@@ -146,83 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "SmartStore\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "SmartStore\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T08:18:27.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Program.cs",
               "RelativeDocumentMoniker": "SmartStore\\Program.cs",
               "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Program.cs",
               "RelativeToolTip": "SmartStore\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAIAwwBsAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T20:58:25.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\IProductService.cs",
-              "RelativeDocumentMoniker": "SmartStore\\Services\\IProductService.cs",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\IProductService.cs",
-              "RelativeToolTip": "SmartStore\\Services\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T21:33:39.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "SmartStore\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Services\\ProductService.cs",
-              "RelativeToolTip": "SmartStore\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T21:34:08.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SmartStore.csproj",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\SmartStore.csproj",
-              "RelativeDocumentMoniker": "SmartStore\\SmartStore.csproj",
-              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\SmartStore.csproj",
-              "RelativeToolTip": "SmartStore\\SmartStore.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-23T19:41:27.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\Mateusz\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
-              "ToolTip": "C:\\Users\\Mateusz\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\5715b865-e228-4159-9cbf-7ee59d36d8d1\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAACnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-23T19:03:35.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "SmartStore\\Models\\ApplicationUser.cs",
@@ -230,11 +139,12 @@
               "RelativeToolTip": "SmartStore\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:42:09.787Z"
+              "WhenOpened": "2026-03-20T08:42:09.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Context\\AppDBContext.cs",
               "RelativeDocumentMoniker": "SmartStore\\Context\\AppDBContext.cs",
@@ -242,7 +152,34 @@
               "RelativeToolTip": "SmartStore\\Context\\AppDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:41:46.565Z"
+              "WhenOpened": "2026-03-20T08:41:46.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SmartStore\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SmartStore\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwCUAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T21:16:29.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Models\\Helpers\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "SmartStore\\Models\\Helpers\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\Mateusz\\Documents\\GitHub\\SmartStore\\SmartStore\\SmartStore\\Models\\Helpers\\ApiResponse.cs",
+              "RelativeToolTip": "SmartStore\\Models\\Helpers\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T20:46:31.823Z",
+              "EditorCaption": ""
             }
           ]
         }

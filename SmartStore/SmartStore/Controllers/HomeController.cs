@@ -2,6 +2,7 @@
 using SmartStore.Models.DTOs;
 using System.Diagnostics;
 using SmartStore.Services;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace SmartStore.Controllers
@@ -29,7 +30,15 @@ namespace SmartStore.Controllers
             );
         }
 
-        
+        [Authorize]
+        [HttpGet("test-auth")]
+        public async Task<IActionResult> TestAuth()
+        {
+            return Ok(new { 
+                message = "Gratulację!!! Masz ważny token i jesteś poprawnie zalogowany dzięki czemu widzisz treść"
+            });
+
+        }
     }
 }
 

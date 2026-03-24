@@ -8,7 +8,7 @@ namespace SmartStore.Services
         Task<List<ProductDto>> GetAllProductsAsync();
         Task<List<ProductDto>> GetProductsByCategory(string category_name);
 
-        
+        Task<List<ProductDto>> GetProductBySearchQuery(string query);
 
         Task<ProductDto> GetProductByID(int id);
 

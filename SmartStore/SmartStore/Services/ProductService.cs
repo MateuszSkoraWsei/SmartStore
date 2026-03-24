@@ -4,20 +4,17 @@ namespace SmartStore.Services
 {
     public class ProductService : IProductService
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly HttpClient _client;
+        
         
 
-        public ProductService(IHttpClientFactory httpClientFactory)
+        public ProductService(HttpClient client)
         {
-            _httpClientFactory = httpClientFactory;
+            _client = client;
         }
-
-       
-
-        public async Task<List<ProductDto>> GetAllProductsAsync()
+        private async Task<List<ProductDto>> SendGetRequest(string url)
         {
-            var client = _httpClientFactory.CreateClient("DummyJson");
-            var response = await client.GetAsync("products");
+            var response = await _client.GetAsync(url);
 
             if (response.IsSuccessStatusCode)
             {
@@ -27,11 +24,15 @@ namespace SmartStore.Services
             }
             return new List<ProductDto>();
         }
+      
+
+        public async Task<List<ProductDto>> GetAllProductsAsync()
+        => await SendGetRequest($"products");
 
         public async Task<ProductDto> GetProductByID(int id)
         {
-            var client = _httpClientFactory.CreateClient("DummyJson");
-            var response = await client.GetAsync($"products/{id}");
+            
+            var response = await _client.GetAsync($"products/{id}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -42,18 +43,11 @@ namespace SmartStore.Services
         }
 
         public async Task<List<ProductDto>> GetProductsByCategory(string category)
-        {
-            var client = _httpClientFactory.CreateClient("DummyJson");
-            var response = await client.GetAsync($"products/category/{category}");
+        => await SendGetRequest($"products/category/{category}");
 
 
-            if (response.IsSuccessStatusCode)
-            {
-                var data = await response.Content.ReadFromJsonAsync<ProductsResponse>();
-                return data!.Products ?? new List<ProductDto>();
-            }
-            return new List<ProductDto>();
-        }
+        public async Task<List<ProductDto>> GetProductBySearchQuery(string query)
+        => await SendGetRequest($"products/search?q={query}");
 
         
     }
