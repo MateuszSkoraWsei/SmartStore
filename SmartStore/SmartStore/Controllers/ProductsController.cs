@@ -16,31 +16,107 @@ namespace SmartStore.Controllers
         public ProductsController(IProductService productService) {
             _productService = productService;
         }
+
+
         [HttpGet]
         [Route("category/{category}")]
+        [ProducesResponseType(typeof(ApiResponse<List<ProductDto>>),StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Categories(string category)
         {
-            var products = await _productService.GetProductsByCategory(category);
-            return Ok(new
+            if(String.IsNullOrWhiteSpace(category))
             {
-                status = true,
-                data = products,
-                total = products.Count
-            });
+                return BadRequest(
+                    new ApiResponse<string> { 
+                        Succes = false,
+                        Message = "Kategoria nie może być pusta"
+                    });
+            }
+            try
+            {
+                var products = await _productService.GetProductsByCategory(category);
+                if(products == null || !products.Any())
+                {
+                    return Ok(
+                        new ApiResponse<string> {
+                            Succes = true,
+                            Message = $"Nie znaleziono produktów dla kategorii : {category}"
+                        });
+                }
+                else
+                {
+                    return Ok(new ApiResponse<List<ProductDto>>
+                    {
+                        Succes = true,
+                        Data = products,
+                        
+                    });
+                }
+                    
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponse<string>
+                {
+                    Succes = false,
+                    Message = "Wystąpił nieoczekiwany błąd serwera"
+                });
+            }
+            
 
         }
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(ApiResponse<ProductDto>),StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
         public async Task<IActionResult> GetProductById(int id)
         {
-            var product = await _productService.GetProductByID(id);
+            if(id <= 0)
+            {
+                return BadRequest(
+                    new ApiResponse<string>
+                    {
+                        Succes = false,
+                        Message = "Id nie może być ujemne lub równe 0"
+                    });
+                    
+            }
+            try
+            {
+                var product = await _productService.GetProductByID(id);
 
-            return Ok(
-                new
+                if(product == null)
                 {
-                    status = true,
-                    data = product
+                    return Ok(
+                        new ApiResponse<string>
+                        {
+                            Succes = true,
+                            Message = "Nie znaleziono produktu o podanym id"
+                        }
+                        );
+                }
+
+                else {
+                    return Ok(
+                    new ApiResponse<ProductDto>
+                    {
+                        Succes = true,
+                        Data = product
+                    });
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponse<string>
+                {
+                    Succes = false,
+                    Message = "Wystąpił nieoczekiwany błąd serwera"
                 });
+
+            }
+            
         }
         [HttpGet("search")]
         [ProducesResponseType(typeof(ApiResponse<List<ProductDto>>), StatusCodes.Status200OK)]

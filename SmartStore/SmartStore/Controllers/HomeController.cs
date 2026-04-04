@@ -3,6 +3,7 @@ using SmartStore.Models.DTOs;
 using System.Diagnostics;
 using SmartStore.Services;
 using Microsoft.AspNetCore.Authorization;
+using SmartStore.Models.Helpers;
 
 
 namespace SmartStore.Controllers
@@ -32,10 +33,13 @@ namespace SmartStore.Controllers
 
         [Authorize]
         [HttpGet("test-auth")]
+        [ProducesResponseType(typeof(ApiResponse<string>) , StatusCodes.Status200OK)]
         public async Task<IActionResult> TestAuth()
         {
-            return Ok(new { 
-                message = "Gratulację!!! Masz ważny token i jesteś poprawnie zalogowany dzięki czemu widzisz treść"
+            return Ok(new ApiResponse<string> {
+                Succes = true,
+                Data = "Gratulację!!! Masz ważny token i jesteś poprawnie zalogowany dzięki czemu widzisz treść",
+                Message = "Pomyślnie cie zautoryzowało"
             });
 
         }

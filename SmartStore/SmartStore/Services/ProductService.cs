@@ -27,7 +27,7 @@ namespace SmartStore.Services
       
 
         public async Task<List<ProductDto>> GetAllProductsAsync()
-        => await SendGetRequest($"products");
+        => await SendGetRequest("/products");
 
         public async Task<ProductDto> GetProductByID(int id)
         {

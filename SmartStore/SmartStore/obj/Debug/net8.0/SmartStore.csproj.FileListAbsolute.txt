@@ -143,3 +143,7 @@ C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\obj\Debug\net
 C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\obj\Debug\net8.0\ref\SmartStore.dll
 C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\bin\Debug\net8.0\React\my-react-app\package-lock.json
+C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\bin\Debug\net8.0\React\my-react-app\package.json
+C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\bin\Debug\net8.0\React\package-lock.json
+C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\bin\Debug\net8.0\React\package.json

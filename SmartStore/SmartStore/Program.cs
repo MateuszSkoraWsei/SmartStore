@@ -20,14 +20,19 @@ namespace SmartStore
 
 
 
-            builder.Services.AddHttpClient("DummyJson", client =>
+            builder.Services.AddHttpClient<IProductService, ProductService>( client =>
             {
-                client.BaseAddress = new Uri("https://dummyjson.com/");
+                client.BaseAddress = new Uri("https://dummyjson.com");
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
+            builder.Services.AddHttpClient<ICategoryService, CategoryService>(client =>
+            {
+                client.BaseAddress = new Uri("https://dummyjson.com");
                 client.DefaultRequestHeaders.Add("Accept", "application/json");
             });
 
-            builder.Services.AddScoped<IProductService, ProductService>();
-            builder.Services.AddScoped<ICategoryService, CategoryService>();
+
+           
 
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>
@@ -66,16 +71,7 @@ namespace SmartStore
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("ReactAppPolicy", policy =>
-                {
-                    policy.WithOrigins("https://localhost:3000")
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-
-                });
-            });
+            
 
             builder.Services.AddDbContext<AppDBContext>(options =>
                 options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"])
@@ -99,7 +95,16 @@ namespace SmartStore
             })
                 .AddRoles<IdentityRole>();
 
-            
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("ReactPolicy", policy =>
+                {
+                    policy
+                    .WithOrigins("http://localhost:5173")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
                 
 
                 var app = builder.Build();
@@ -120,14 +125,19 @@ namespace SmartStore
             }
             app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
-                app.UseStaticFiles();
+            app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
                 app.UseRouting();
+            
+
+            app.UseCors("ReactPolicy");
+
 
             app.UseAuthentication();
             app.UseAuthorization();
             
 
-                app.UseCors("ReactAppPolicy");
 
 
                 app.MapControllers();
