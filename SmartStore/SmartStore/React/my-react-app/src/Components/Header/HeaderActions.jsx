@@ -1,4 +1,4 @@
-import CartSideBar from './Cart.jsx'
+import CartSideBar from './CartSidebar.jsx'
 export default function HeaderActions(){
     return (
         <div>

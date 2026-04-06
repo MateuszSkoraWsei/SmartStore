@@ -9,21 +9,19 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SmartStore
 build_property.RootNamespace = SmartStore
-build_property.ProjectDir = C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore\
+build_property.ProjectDir = /home/mateusz/RiderProjects/SmartStore/SmartStore/SmartStore/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Mateusz\Documents\GitHub\SmartStore\SmartStore\SmartStore
+build_property.MSBuildProjectDirectory = /home/mateusz/RiderProjects/SmartStore/SmartStore/SmartStore
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Mateusz/Documents/GitHub/SmartStore/SmartStore/SmartStore/Views/Home/Error/NotFound.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvclxOb3RGb3VuZC5jc2h0bWw=
+[/home/mateusz/RiderProjects/SmartStore/SmartStore/SmartStore/Views/Home/Error/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci9Ob3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mateusz/Documents/GitHub/SmartStore/SmartStore/SmartStore/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/mateusz/RiderProjects/SmartStore/SmartStore/SmartStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

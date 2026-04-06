@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"JtOpid+N23vzUfjgrWgXilQ+OoMSgr5S+GBjO80RrHE=","Source":"SmartStore","BasePath":"_content/SmartStore","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "wUDzOah3S9tBrAgFo3clv+TLZ/Unpk77Qi3dPFIG2SQ=",
+  "Source": "SmartStore",
+  "BasePath": "_content/SmartStore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
