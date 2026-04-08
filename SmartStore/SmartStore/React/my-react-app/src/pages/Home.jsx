@@ -1,9 +1,9 @@
 import './Home.css';
 
 
-import Hero from '../components/Home/Hero';
-import CategorySidebar from '../components/Home/CategorySidebar';
-import FeaturedProducts from '../components/Home/FeaturedProducts';
+import Hero from '../Components/Home/Hero';
+import CategorySidebar from '../Components/Home/CategorySidebar';
+import ProductGrid from '../Components/Home/ProductGrid.jsx';
 
 const Home = () => {
     return (
@@ -29,7 +29,7 @@ const Home = () => {
                             {/* Tu w przyszłości można dodać sortowanie, np. rosnąco/malejąco */}
                         </div>
 
-                        <FeaturedProducts />
+                        <ProductGrid />
                     </main>
 
                 </div>

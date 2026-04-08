@@ -1,4 +1,5 @@
 ﻿import api from './api';
+import  './index.css';
 
 import StoreHeader from './Components/Header/StoreHeader';
 import MainFooter from './Components/Footer/MainFooter';
