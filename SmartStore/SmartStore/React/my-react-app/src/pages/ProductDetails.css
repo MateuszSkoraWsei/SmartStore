@@ -1,0 +1,8 @@
+.product-split {
+    display: flex;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    .product-split { flex-direction: column; }
+}
