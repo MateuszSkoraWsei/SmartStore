@@ -1,39 +1,41 @@
 import './Home.css';
-import ProductDetails from './ProductDetails';
 
+
+import Hero from '../components/Home/Hero';
+import CategorySidebar from '../components/Home/CategorySidebar';
+import FeaturedProducts from '../components/Home/FeaturedProducts';
 
 const Home = () => {
     return (
         <div className="home-container">
-           
-            <section className="hero-section">
-                <div className="hero-text">
-                    <h1>Nowa Kolekcja 2026</h1>
-                    <p>Odkryj produkty, które zmieniają codzienność.</p>
-                    <button className="btn-main">Sprawdź teraz</button>
-                </div>
-            </section>
+            {/* 1. Baner zostaje na całą szerokość */}
+            <Hero />
 
-           
-            <section className="section-padding">
-                <h2 className="section-title">Kategorie</h2>
-                <div className="category-flex">
-                    {['Elektronika', 'Moda', 'Dom', 'Sport'].map(cat => (
-                        <div key={cat} className="category-pill">{cat}</div>
-                    ))}
-                </div>
-            </section>
+            {/* Kontener ograniczający szerokość strony */}
+            <div className="section-padding">
 
-            
-            <section className="section-padding">
-                <h2 className="section-title">Polecane dla Ciebie</h2>
-                <div className="product-grid">
-                    
-                    <ProductDetails />
+                {/* 2. Nowy grid dla Sidebaru i Produktów */}
+                <div className="store-layout">
+
+                    {/* Lewa kolumna - KATEGORIE */}
+                    <aside className="sidebar-area">
+                        <CategorySidebar />
+                    </aside>
+
+                    {/* Prawa kolumna - PRODUKTY */}
+                    <main className="main-area">
+                        <div className="flex justify-between items-center mb-6">
+                            <h2 className="text-2xl font-bold">Wszystkie produkty</h2>
+                            {/* Tu w przyszłości można dodać sortowanie, np. rosnąco/malejąco */}
+                        </div>
+
+                        <FeaturedProducts />
+                    </main>
+
                 </div>
-            </section>
+            </div>
         </div>
     );
 };
 
-export default Home; 
+export default Home;
