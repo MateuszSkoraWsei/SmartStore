@@ -48,13 +48,14 @@ const  ProductGrid =   () => {
                     <div key={product.id} className="product-card">
                         <div className="product-card-img">
                             <div className="img-placeholder">
-                                <img src={product.images[0]} width="100" height="100"  alt={product.title} />
+                                {/* Usunięto sztywne width i height, CSS zajmie się resztą */}
+                                <img src={product.images[0]} alt={product.title} />
                             </div>
                         </div>
                         <div className="product-card-info">
                             <span className="card-brand">{product.category}</span>
                             <h4>{product.title}</h4>
-                            <p className="card-price">{product.price}PLN</p>
+                            <p className="card-price">{product.price} PLN</p>
                         </div>
                     </div>
                 ))}

@@ -257,24 +257,97 @@
 .content-area { flex: 1; }
 .content-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
 
-/* Karty Produktów */
+/* --- Główny kontener siatki --- */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 2rem;
+    /* Automatycznie dopasowuje liczbę kolumn do szerokości ekranu */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* --- Karta produktu --- */
 .product-card {
-    background: var(--white);
-    border-radius: var(--radius);
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
     overflow: hidden;
-    transition: transform 0.3s;
-    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.product-card:hover { transform: translateY(-5px); }
-.img-placeholder { height: 200px; background: #e2e8f0; }
-.product-card-info { padding: 1.5rem; }
-.card-brand { font-size: 0.7rem; color: var(--primary); font-weight: 700; text-transform: uppercase; }
-.product-card-info h4 { margin: 5px 0; font-size: 1rem; }
-.card-price { font-weight: 700; color: var(--text-main); margin-top: 10px; }
+/* Efekt najechania myszką (Hover) */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Sekcja obrazka --- */
+.product-card-img {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Utrzymuje stałe proporcje obrazka */
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Obrazek wypełni obszar bez zniekształceń */
+    transition: transform 0.4s ease;
+}
+
+/* Delikatne powiększenie zdjęcia przy hoverze */
+.product-card:hover .img-placeholder img {
+    transform: scale(1.08);
+}
+
+/* --- Sekcja informacji o produkcie --- */
+.product-card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pozwala sekcji zająć całą dostępną wysokość */
+}
+
+/* Kategoria / Marka */
+.card-brand {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+/* Tytuł produktu */
+.product-card-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+    /* Przycinanie długich tekstów do 2 linijek */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Cena */
+.card-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e63946; /* Wyrazisty kolor dla ceny */
+    margin: auto 0 0 0; /* Wpycha cenę zawsze na sam dół karty */
+}
