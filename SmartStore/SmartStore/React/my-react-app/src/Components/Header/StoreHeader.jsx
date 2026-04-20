@@ -4,7 +4,7 @@ import './StoreHeader.css';
 
 const StoreHeader = () => {
     const [cartCount] = useState(3); // Przykładowa liczba produktów
-
+    
     return (
         <header className="main-header">
             <div className="header-container">

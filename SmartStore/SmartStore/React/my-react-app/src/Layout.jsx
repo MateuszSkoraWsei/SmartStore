@@ -1,11 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import StoreHeader from './Components/Header/StoreHeader.jsx';
-import MainFooter from './Components/Footer/MainFooter.jsx';
+import StoreHeader from './Components/Header/StoreHeader';
+import MainFooter from './Components/Footer/MainFooter';
 
 const Layout = () =>{
+   
     return (
         <div className="app-container">
-            <StoreHeader />
+            <header className="App-header">
+                <StoreHeader />
+                
+            </header>
             
             <main className="content">
                 <Outlet />
