@@ -1,20 +1,23 @@
 ﻿import api from './api';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Home from './pages/Home';
+import ProductDetails from './pages/ProductDetails';
 import  './index.css';
 
-import StoreHeader from './Components/Header/StoreHeader';
-import MainFooter from './Components/Footer/MainFooter';
-import Home from './pages/Home';
+
 
 export default function App() {
     
     return (
-       <div className="app-container">
-        <StoreHeader/>
-           <main>
-               <Home/>
-           </main>
-           <MainFooter/>
-
-       </div>
+       <BrowserRouter>
+           <Routes>
+               <Route path="/" element={<Layout/>} />
+               <Route index element={<Home/>} />
+               
+               <Route path="products/:id" element={<ProductDetails/>} />
+               
+           </Routes>
+       </BrowserRouter>
     )
 }
