@@ -1,5 +1,6 @@
 import { ShoppingCart, User, Search, Heart } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './StoreHeader.css';
 
 const StoreHeader = () => {
@@ -10,9 +11,12 @@ const StoreHeader = () => {
             <div className="header-container">
 
                 {/* LEWA SEKCJA: Logo */}
-                <div className="logo">
-                    Smart<span>Store</span>
-                </div>
+                <Link to={'/'}>
+                    <div className="logo">
+                        Smart<span>Store</span>
+                    </div>
+                </Link>
+                
 
                 {/* ŚRODKOWA SEKCJA: Search Bar */}
                 <div className="search-wrapper">
