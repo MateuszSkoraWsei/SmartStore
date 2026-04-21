@@ -15,7 +15,7 @@ namespace SmartStore.Models.DTOs
 
         public decimal Price { get; set; }
 
-        public string Tumbnail { get; set; } = string.Empty;
+        public string Thumbnail { get; set; } = string.Empty;
 
         public string Category { get; set; } = string.Empty;
 
