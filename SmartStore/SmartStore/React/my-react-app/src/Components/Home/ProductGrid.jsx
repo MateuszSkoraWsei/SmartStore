@@ -55,7 +55,7 @@ const  ProductGrid =   () => {
                         <div className="product-card-img">
                             <div className="img-placeholder">
                                 
-                                <img src={product.images[0]} alt={product.title} />
+                                <img src={product.thumbnail} alt={product.title} />
                             </div>
                         </div>
                         <div className="product-card-info">

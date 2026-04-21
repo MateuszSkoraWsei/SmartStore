@@ -40,7 +40,7 @@ const ProductDetails = () => {
 
 
                     <div className="product-gallery">
-                        <img src={product.images} className="main-img" alt="product.title" />
+                        <img src={product.thumbnail} className="main-img" alt="product.title" />
                         <div className="thumbnails">
                             <img src="thumb1.jpg" /> <img src="thumb2.jpg" />
                         </div>
