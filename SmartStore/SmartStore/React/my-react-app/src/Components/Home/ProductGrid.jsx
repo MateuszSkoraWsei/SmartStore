@@ -1,14 +1,20 @@
 import api from '../../api';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 import {useState, useEffect} from 'react'
 
 const  ProductGrid =   () => {
+    const navigate = useNavigate();
     
     const placeholders = Array(8).fill(null);
     
     const [products , setProducts] = useState([]);
     const [loading, setLoading] = useState(true);  
+    
+    const RedirectToProducts = (id) => {
+        navigate(`/products/${id}`);
+    }
     
     useEffect(()=>{
         const fetchData = async () => {
@@ -45,10 +51,10 @@ const  ProductGrid =   () => {
 
             <div className="product-grid">
                 {products.map((product) => (
-                    <div key={product.id} className="product-card">
+                    <div key={product.id} className="product-card" onClick={() => RedirectToProducts(product.id)}>
                         <div className="product-card-img">
                             <div className="img-placeholder">
-                                {/* Usunięto sztywne width i height, CSS zajmie się resztą */}
+                                
                                 <img src={product.images[0]} alt={product.title} />
                             </div>
                         </div>
