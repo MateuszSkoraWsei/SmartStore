@@ -1,24 +1,28 @@
 import { ShoppingCart, User, Search, Heart } from 'lucide-react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './StoreHeader.css';
 
 const StoreHeader = () => {
     const [cartCount] = useState(3); // Przykładowa liczba produktów
+    const navigate = useNavigate();
     
+    const handleRedirect = () => {
+        navigate('/');
+    }
     return (
         <header className="main-header">
             <div className="header-container">
 
-                {/* LEWA SEKCJA: Logo */}
-                <Link to={'/'}>
-                    <div className="logo">
+                
+                
+                    <div className="logo" onClick={handleRedirect}>
                         Smart<span>Store</span>
                     </div>
-                </Link>
+                
                 
 
-                {/* ŚRODKOWA SEKCJA: Search Bar */}
+                
                 <div className="search-wrapper">
                     <input type="text" placeholder="Szukaj produktów..." className="search-input" />
                     <button className="search-btn">
@@ -26,7 +30,7 @@ const StoreHeader = () => {
                     </button>
                 </div>
 
-                {/* PRAWA SEKCJA: Akcje */}
+                
                 <div className="actions">
                     <button className="action-btn hide-mobile">
                         <Heart size={22} />
