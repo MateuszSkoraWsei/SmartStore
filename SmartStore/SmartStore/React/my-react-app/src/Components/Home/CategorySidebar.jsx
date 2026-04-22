@@ -11,7 +11,7 @@ const CategorySidebar = () => {
     const [loading, setLoading] = useState(true);
     
     const handleRedirect = (category) => {
-        navigate(`${category}`);
+        navigate(`/${category}`);
     }
     
     useEffect( () => async () =>{
