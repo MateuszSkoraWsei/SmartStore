@@ -1,15 +1,13 @@
 
-/* =========================================
-   6. STOPKA (FOOTER)
-   ========================================= */
+
 .main-footer {
-    background-color: var(--text-dark); /* Głęboki, elegancki granat/czerń */
-    color: #f1f5f9; /* Bardzo jasny szary do tekstów */
+    background-color: var(--text-dark); 
+    color: #f1f5f9; 
     padding-top: 4rem;
-    margin-top: auto; /* Wypycha stopkę na dół, jeśli strona jest pusta */
+    margin-top: auto;
 }
 
-/* Sekcja Newslettera */
+
 .footer-newsletter {
     max-width: 1200px;
     margin: 0 auto;
@@ -53,7 +51,7 @@
     padding: 0.8rem 2rem;
 }
 
-/* Główne Kolumny Stopki */
+
 .footer-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -104,10 +102,10 @@
 
 .footer-col a:hover {
     color: var(--primary);
-    padding-left: 5px; /* Fajny efekt przesunięcia przy najechaniu */
+    padding-left: 5px; 
 }
 
-/* Kontakt i Social Media */
+
 .contact-info li {
     display: flex;
     align-items: center;
@@ -137,7 +135,7 @@
     transform: translateY(-3px);
 }
 
-/* Płatności */
+
 .payment-icons {
     display: flex;
     gap: 1rem;
@@ -153,7 +151,7 @@
     letter-spacing: 1px;
 }
 
-/* Dolny pasek (Prawa Autorskie) */
+
 .footer-bottom {
     max-width: 1200px;
     margin: 0 auto;
@@ -181,7 +179,7 @@
     color: white;
 }
 
-/* RWD - Urządzenia Mobilne */
+
 @media (max-width: 768px) {
     .footer-newsletter {
         flex-direction: column;
@@ -207,7 +205,7 @@
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
-/* Układ główny */
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -220,7 +218,7 @@
     padding: 4rem 0;
 }
 
-/* Hero Banner */
+
 .hero-banner {
     background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     height: 500px;
@@ -235,32 +233,15 @@
 .hero-badge { background: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
 .hero-btn { margin-top: 2rem; padding: 12px 32px; border-radius: 30px; border: none; background: white; color: black; font-weight: 600; cursor: pointer; }
 
-/* Sidebar */
-.category-sidebar {
-    width: 240px;
-    flex-shrink: 0;
-    position: sticky;
-    top: 100px;
-    height: fit-content;
-}
 
-.sidebar-heading { font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 700; }
-.sidebar-nav { display: flex; flex-direction: column; gap: 0.5rem; }
-.sidebar-link {
-    text-align: left; padding: 10px 15px; border-radius: var(--radius);
-    border: none; background: transparent; cursor: pointer; color: var(--text-muted);
-    transition: all 0.2s;
-}
-.sidebar-link:hover { background: white; color: var(--primary); box-shadow: var(--shadow); }
 
-/* Main Area */
 .content-area { flex: 1; }
-.content-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+.content-header { display: flex; justify-content: space-between; align-items: center; }
 
-/* --- Główny kontener siatki --- */
+
 .product-grid {
     display: grid;
-    /* Automatycznie dopasowuje liczbę kolumn do szerokości ekranu */
+    
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 24px;
     padding: 24px;
@@ -268,7 +249,7 @@
     margin: 0 auto;
 }
 
-/* --- Karta produktu --- */
+
 .product-card {
     background: #ffffff;
     border-radius: 12px;
@@ -281,16 +262,16 @@
     cursor: pointer;
 }
 
-/* Efekt najechania myszką (Hover) */
+
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Sekcja obrazka --- */
+
 .product-card-img {
     width: 100%;
-    aspect-ratio: 4 / 3; /* Utrzymuje stałe proporcje obrazka */
+    aspect-ratio: 4 / 3; 
     background-color: #f8f9fa;
     overflow: hidden;
 }
@@ -303,24 +284,24 @@
 .img-placeholder img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Obrazek wypełni obszar bez zniekształceń */
+    object-fit: cover; 
     transition: transform 0.4s ease;
 }
 
-/* Delikatne powiększenie zdjęcia przy hoverze */
+
 .product-card:hover .img-placeholder img {
     transform: scale(1.08);
 }
 
-/* --- Sekcja informacji o produkcie --- */
+
 .product-card-info {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Pozwala sekcji zająć całą dostępną wysokość */
+    flex-grow: 1; 
 }
 
-/* Kategoria / Marka */
+
 .card-brand {
     font-size: 0.75rem;
     font-weight: 600;
@@ -330,24 +311,24 @@
     margin-bottom: 8px;
 }
 
-/* Tytuł produktu */
+
 .product-card-info h4 {
     font-size: 1.1rem;
     font-weight: 600;
     color: #1a1a1a;
     margin: 0 0 12px 0;
     line-height: 1.4;
-    /* Przycinanie długich tekstów do 2 linijek */
+    
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* Cena */
+
 .card-price {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #e63946; /* Wyrazisty kolor dla ceny */
-    margin: auto 0 0 0; /* Wpycha cenę zawsze na sam dół karty */
+    color: #e63946;
+    margin: auto 0 0 0; 
 }

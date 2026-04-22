@@ -24,10 +24,7 @@ const Home = () => {
 
                     
                     <main className="main-area">
-                        <div className="flex justify-between items-center mb-6">
-                            <h2 className="text-2xl font-bold">Wszystkie produkty</h2>
-                            
-                        </div>
+                        
 
                         <ProductGrid />
                     </main>

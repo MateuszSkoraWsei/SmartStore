@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 import {useState, useEffect} from 'react'
+import { useParams } from  'react-router-dom'
 
 const  ProductGrid =   () => {
     const navigate = useNavigate();
@@ -11,7 +12,7 @@ const  ProductGrid =   () => {
     
     const [products , setProducts] = useState([]);
     const [loading, setLoading] = useState(true);  
-    
+    const {category = 'none'} = useParams();
     const RedirectToProducts = (id) => {
         navigate(`/products/${id}`);
     }
@@ -19,9 +20,11 @@ const  ProductGrid =   () => {
     useEffect(()=>{
         const fetchData = async () => {
             try{
-                const response =  await axios.get('http://localhost:5144/api/Home');
                 
-               
+                const response = category === 'none' ? await axios.get('http://localhost:5144/api/Home') : await axios.get(`http://localhost:5144/api/Products/category/${category}`);
+                
+                console.log(response.data);
+                console.log(category);
                 setProducts(response.data.products || response.data.data);
                 
             }

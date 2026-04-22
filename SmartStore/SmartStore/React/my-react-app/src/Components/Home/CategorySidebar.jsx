@@ -1,11 +1,18 @@
+import './CategorySidebar.css';
+
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import  axios  from "axios";
 
 
 const CategorySidebar = () => {
-    
+    const navigate = useNavigate();
     const [categories, setCategories] = useState(true);
     const [loading, setLoading] = useState(true);
+    
+    const handleRedirect = (category) => {
+        navigate(`${category}`);
+    }
     
     useEffect( () => async () =>{
         try{
@@ -29,13 +36,13 @@ const CategorySidebar = () => {
     }
     else{
         return (
-            <div className="category-sidebar">
+            <div className="category-navbar">
                 <h3 className="sidebar-heading">Kategorie</h3>
-                <nav className="sidebar-nav category-flex">
+                <nav className="sidebar-nav ">
                     {categories.map((cat, index) => (
-                        <button key={index} className="sidebar-link">
+                        <div key={index} className="sidebar-link" onClick={() => handleRedirect(cat)}>
                             {cat}
-                        </button>
+                        </div>
                     ))}
                 </nav>
             </div>

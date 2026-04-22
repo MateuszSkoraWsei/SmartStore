@@ -1,0 +1,15 @@
+.sidebar-nav{
+    
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.sidebar-link{
+    padding: 10px;
+    
+}
+.sidebar-link:hover{
+    background-color: lightgray;
+}
