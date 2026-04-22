@@ -1,7 +1,7 @@
 import './Home.css';
 
 
-import Hero from '../Components/Home/Hero';
+
 import CategorySidebar from '../Components/Home/CategorySidebar';
 import ProductGrid from '../Components/Home/ProductGrid.jsx';
 
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className="home-container">
             
-            <Hero />
+            
 
             
             <div className="section-padding">
