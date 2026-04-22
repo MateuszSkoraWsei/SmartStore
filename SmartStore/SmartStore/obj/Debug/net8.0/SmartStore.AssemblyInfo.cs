@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a0c6024b3620080ea1ab8f228b31f5b364dc1da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+355e2aba0b2cda0ed69f700ed3a196d04f282c88")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
